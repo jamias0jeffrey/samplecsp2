@@ -1,0 +1,66 @@
+/* CSS Variables */
+:root {
+	--main-background-color: #dc3545;
+	--navbar-background-color: #343a40;
+}
+
+/*
+ *
+ * General Rules
+ *
+ */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--main-background-color);
+}
+
+/*
+ *
+ * Content
+ *
+ */
+
+.wrapper {
+	background-color: white;
+	width: 80%;
+	margin: 0 auto;
+	min-height: 100vh;
+	padding: 5px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 5px;
+}
+
+table {
+	text-align: center;
+}
+
+td {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+
+
+/*
+ *
+ * Footer
+ *
+ */
+
+#main-footer {
+	background-color: var(--navbar-background-color);
+	color: lightgrey;
+	padding: 25px 0;
+	text-align: center;
+}
